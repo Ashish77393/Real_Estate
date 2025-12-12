@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+    <title>Balway_realstate</title>
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Bellway Realtech</h3>
+          <p>
+            Helping families find their perfect place.<br />
+            Because every dream deserves a home.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>
+            <strong>Address:</strong><br />
+            3rd Floor, Tradex Tower, Plot No. 15A,<br />
+            Sector 125, Noida, Uttar Pradesh 201303
+          </p>
+          <p><strong>Call:</strong> +91-9899831100</p>
+          <p><strong>Email:</strong> info@bellwayrealtech.com</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+
+          <div class="footer-social">
+            <a href="{{data.facebook}}"><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        Copyright © 2025 <strong>Bellway Realtech</strong> | Trusted Real Estate
+        Consultants in Noida. All rights reserved.
+      </div>
+
+      <a href="#" class="scroll-top">↑</a>
+    </footer>
+  </body>
+</html>

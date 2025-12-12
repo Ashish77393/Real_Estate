@@ -1,0 +1,92 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/help.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="faq-container">
+      <!-- IMAGE -->
+      <div class="faq-image">
+        <img src="/static/Image/carasoul_1.png" alt="Real Estate Image" />
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq-box">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>+</span> How many years of experience does Bellway Realtech
+            have?
+          </div>
+          <div class="faq-answer">
+            <p>
+              We have 15+ years of experience in residential, commercial, plots,
+              farmhouses, and investment consulting.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>+</span> Can you help me get a home loan?
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes! We assist in securing home loans through top banks with quick
+              approvals and easy documentation.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>+</span> Why should I invest in Noida & Greater Noida?
+          </div>
+          <div class="faq-answer">
+            <p>
+              Noida is one of the fastest-growing investment hubs with excellent
+              connectivity, IT parks, and high ROI opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>+</span> Do you assist NRIs with property purchases?
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, we provide NRI-focused services including legal support,
+              property management, documentation, and investment advisory.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>+</span> What is the booking process for a property?
+          </div>
+          <div class="faq-answer">
+            <p>
+              The booking process includes property shortlisting, site visit,
+              documentation, token payment, and agreement signing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        item.querySelector(".faq-question").onclick = () => {
+          item.classList.toggle("active");
+        };
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url("/static/Image/carasoul_1.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  max-width: 900px;
+  padding: 20px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.cta-btn {
+  margin-top: 35px;
+  background: #ffbf00;
+  padding: 18px 35px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* WHY CHOOSE SECTION */
+.why-choose {
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.why-choose h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.why-choose p {
+  font-size: 18px;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.55);
+  padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  animation: fadeIn 1s ease-in;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

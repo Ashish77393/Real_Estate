@@ -1,0 +1,88 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/aboutus.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="about-section">
+      <!-- Title -->
+      <p
+        style="
+          letter-spacing: 3px;
+          color: #777;
+          text-align: center;
+          padding-top: 20px;
+        "
+        data-aos="fade-right"
+      >
+        🔔 ABOUT US
+      </p>
+
+      <h1 class="about-title" data-aos="fade-up">
+        OUR SUCCESS <span>STORY</span>
+      </h1>
+
+      <!-- Intro Paragraph -->
+      <p class="about-intro" data-aos="fade-up" data-aos-delay="200">
+        Welcome to <strong>Bellway Realtech</strong>, your trusted partner in
+        premium real estate. We bring you tailored property solutions that match
+        your lifestyle and investment goals. From
+        <strong>luxury farmhouses</strong> and <strong>fertile land</strong> to
+        <strong>modern high-end apartments</strong>, we offer a diverse range of
+        exclusive real estate options across India.
+      </p>
+
+      <!-- Images + Text -->
+      <div class="about-grid">
+        <div data-aos="fade-right">
+          <img src="{% static 'Image/carasoul_1.png' %}" class="float-img" />
+        </div>
+
+        <div class="about-box" data-aos="fade-left">
+          <h3><i class="fas fa-bullseye about-icon"></i> Our Mission</h3>
+          <p>
+            Our mission is to redefine real estate by providing value-driven
+            investments that blend
+            <strong>luxury, functionality, and high-growth potential</strong>.
+            With Bellway Realtech, your journey to find the perfect property
+            becomes seamless, transparent, and rewarding.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div class="about-grid" style="margin-top: 60px">
+        <div class="about-box" data-aos="fade-right">
+          <h3><i class="fas fa-handshake about-icon"></i> Why Choose Us?</h3>
+          <p>
+            ✔ Experienced Real Estate Professionals <br />
+            ✔ Personalized Investment Guidance<br />
+            ✔ Verified Properties & Legal Transparency<br />
+            ✔ High ROI Real Estate Opportunities<br />
+            ✔ Customer-First Approach
+          </p>
+        </div>
+
+        <div data-aos="fade-left">
+          <img src="{% static 'Image/carasoul_4.png' %}" class="float-img" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
