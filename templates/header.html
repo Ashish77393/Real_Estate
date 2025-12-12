@@ -223,10 +223,10 @@
           <div class="nav-links" id="navLinks">
             <a href="{% url 'home' %}">Home</a>
 
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="{% url 'About' %}">About</a>
+            <a href="">Services</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
           </div>
         </nav>
 
@@ -308,8 +308,8 @@
     <!-- Example page content to demonstrate sticky header (remove in production) -->
     <main
       style="
-        padding: 28px;
-        max-width: 980px;
+        /* padding: 28px; */
+        max-width: 100%;
         margin: 20px auto;
         font-family: inherit;
         color: #0f172a;

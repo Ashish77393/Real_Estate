@@ -1,0 +1,97 @@
+{% include 'header.html' %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/carasoul.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/About.css' %}" />
+    <title>Belway_Realtech</title>
+  </head>
+
+  <body>
+    {%include "carasoul.html"%}
+    <div class="hero">
+      <div class="hero-text animate__animated animate__fadeInDown">
+        <h1>About Us</h1>
+        <p>Your Trusted Partner in Real Estate Excellence</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Who We Are</h2>
+      <div class="about-container animate__animated animate__fadeInUp">
+        <img src="{% static 'Image/carasoul_3.png' %}" alt="Real Estate Team" />
+        <div class="about-text">
+          Welcome to our real estate company, where we connect people with their
+          dream properties. With years of expertise in residential and
+          commercial real estate, we take pride in offering premium plots,
+          modern apartments, luxury homes, and investment-friendly land options.
+          <br /><br />
+          Our team is dedicated to providing transparent, reliable, and
+          customer-focused services. Whether you're buying, selling, or
+          investing, we ensure a smooth experience with expert guidance at every
+          step.
+        </div>
+      </div>
+
+      <div class="vision-mission">
+        <div class="card animate__animated animate__zoomIn">
+          <h3>Our Vision</h3>
+          <p>
+            To be the most trusted and innovative real estate brand delivering
+            excellence, transparency, and long‑term value to our clients and
+            communities.
+          </p>
+        </div>
+
+        <div class="card animate__animated animate__zoomIn">
+          <h3>Our Mission</h3>
+          <p>
+            To simplify property buying and investing with expert guidance,
+            ethical services, and modern solutions tailored for every client’s
+            needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section">
+      <h2>Our Expert Team</h2>
+      <div class="team-grid">
+        <div class="team-member animate__animated animate__fadeInUp">
+          <img
+            src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg"
+            alt="Team Member"
+          />
+          <h4>Rahul Sharma</h4>
+          <p>Senior Property Advisor</p>
+        </div>
+
+        <div class="team-member animate__animated animate__fadeInUp">
+          <img
+            src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg"
+            alt="Team Member"
+          />
+          <h4>Pooja Verma</h4>
+          <p>Client Relationship Manager</p>
+        </div>
+
+        <div class="team-member animate__animated animate__fadeInUp">
+          <img
+            src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg"
+            alt="Team Member"
+          />
+          <h4>Manish Patel</h4>
+          <p>Real Estate Consultant</p>
+        </div>
+      </div>
+    </section>
+
+    {% include 'footer.html' %}
+  </body>
+</html>
