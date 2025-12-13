@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'footer',
     "About",
+    'Contact',
+    "Project",
 ]
 
 MIDDLEWARE = [

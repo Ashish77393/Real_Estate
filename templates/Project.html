@@ -1,0 +1,121 @@
+{% include "header.html" %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/carasoul.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/Project.css' %}" />
+    <title>Image Card Grid</title>
+  </head>
+
+  <body>
+    {% include "carasoul.html" %}
+
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/09/506x333.png"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Galactic City</h3>
+            <p>Modern futuristic living</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/09/FarmHouse-2048x1365.jpg"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Green Beauty Farms</h3>
+            <p>Eco-friendly farm plots</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/03/projects-3.jpg"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Luxury Garden</h3>
+            <p>Premium landscape design</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/03/projects-4.jpg"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Smart Irrigation</h3>
+            <p>Advanced water systems</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/03/projects-5.jpg"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Modern Villa</h3>
+            <p>Luxury smart homes</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/03/projects-6.jpg"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Eco Park</h3>
+            <p>Nature-friendly spaces</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/03/projects-7.jpg"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Night Landscape</h3>
+            <p>Elegant lighting design</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/03/projects-8.jpg"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Water Feature</h3>
+            <p>Premium fountains</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://bellwayrealtech.com/wp-content/uploads/2025/03/projects-2.jpg"
+            alt=""
+          />
+          <div class="card-content">
+            <h3>Green Living</h3>
+            <p>Sustainable lifestyle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include "footer.html" %}
+  </body>
+</html>
