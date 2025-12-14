@@ -26,5 +26,7 @@ urlpatterns = [
     path("About/",views.About,name="About"),
     path("ProjectData/",view.projectData,name="ProjectData"),
     path("contact/",view.contact,name="contact"),
-    path("service/",view.service,name="service")
+    path("service/",view.service,name="service"),
+    path("price_predication/",view.price,name="price_predication"),
+
 ]
