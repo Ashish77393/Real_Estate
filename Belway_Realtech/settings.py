@@ -26,9 +26,9 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    'https://real-estate-2-kny2.onrender.com',
+    'real-estate-2-kny2.onrender.com',
     'localhost',
-    '127.0.0.1'
+    '127.0.0.1',
 ]
 
 
