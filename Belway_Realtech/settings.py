@@ -23,9 +23,10 @@ SECRET_KEY = 'django-insecure-dyyi8=&v^##bq3o$o$4wnz6yqc0eu=ex@-!6i)6p!gkmzm6u*$
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-SECRET_KEY= os.environ.get("SECRET_KEY")
+
+
 ALLOWED_HOSTS = [
-    'ALLOWED_HOSTS',
+    'https://real-estate-2-kny2.onrender.com',
     'localhost',
     '127.0.0.1'
 ]
