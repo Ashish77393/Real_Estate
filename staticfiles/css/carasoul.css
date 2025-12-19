@@ -1,0 +1,40 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: auto;
+  height: auto; /* adjust height as needed */
+  object-fit: cover; /* makes image fit neatly */
+  border-radius: 10px;
+}
+
+.carousel-item p {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  width: 60%;
+  border-radius: 10px;
+}

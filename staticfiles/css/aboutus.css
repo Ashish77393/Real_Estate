@@ -1,0 +1,83 @@
+about-section {
+  padding: 60px 5%;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Section Title */
+.about-title {
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-title span {
+  color: #d8a03d;
+}
+
+/* Intro */
+.about-intro {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Image + Text Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 40px;
+}
+
+.about-grid img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mission Section */
+.about-box {
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-box h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-icon {
+  color: #d8a03d;
+  font-size: 40px;
+}
+
+/* Animation Float */
+.float-img {
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
