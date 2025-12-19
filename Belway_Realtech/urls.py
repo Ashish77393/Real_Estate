@@ -28,5 +28,6 @@ urlpatterns = [
     path("contact/",view.contact,name="contact"),
     path("service/",view.service,name="service"),
     path("price_predication/",view.price,name="price_predication"),
+     path("prediction/",view.prediction,name="prediction"),
 
 ]
