@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-dyyi8=&v^##bq3o$o$4wnz6yqc0eu=ex@-!6i)6p!gkmzm6u*$
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'real-estate-n54d.onrender.com',
+    'real-estate-1-602c.onrender.com',
     'localhost',
     '127.0.0.1'
 ]
