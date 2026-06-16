@@ -1,5 +1,5 @@
 {% load static %}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -237,9 +237,14 @@
         <a href="{% url 'service' %}">Services</a>
         <a href="{% url 'ProjectData' %}">Projects</a>
         <a href="{% url 'contact' %}">📞 Contact</a>
-        <a href="">🎥 Vlogs</a>
-        <a href="">🏆 Awards</a>
-        <a href="">⭐ Ratings</a>
+        <div class="dropdown">
+          <button class="dropdown-btn">More ▾</button>
+          <div class="dropdown-menu">
+            <a href="">🎥 Vlogs</a>
+            <a href="">🏆 Awards</a>
+            <a href="{%url 'price_predication' %}">🎯 Price-predication</a>
+          </div>
+        </div>
       </div>
     </header>
 
